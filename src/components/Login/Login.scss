@@ -1,0 +1,55 @@
+@import "../../assets/styles/global.scss";
+
+.login-wrapper {
+    padding: 50px 15px;
+    background: #E1F5FE;
+
+    .login-info-text {
+        margin: 0 0 50px;
+
+        @include for-size(xs-device) {
+            text-align: left;
+        }
+
+        .login-text {
+            font-size: 30px;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #384951;
+
+            @include for-size(lg-screen) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .login-form {
+        .username-wrapper,
+        .password-wrapper {
+            margin-bottom: 30px;
+            text-align: left;
+            .form-control {
+                margin-top: 15px;
+                background: #fff;
+                color: #2faeb7;
+                text-shadow: 0 0 10px #fff;
+            }
+            @include for-size(tablet-device) {
+                width: 50%;
+                margin: 0 auto 30px;
+            }
+            @include for-size(lg-screen) {
+                width: 30%;
+            }
+        }
+        .button-wrapper {
+            @include for-size(tablet-device) {
+                width: 50%;
+                margin: 0 auto 30px;
+            }
+            @include for-size(lg-screen) {
+                width: 30%;
+            }
+        }
+    }
+}
