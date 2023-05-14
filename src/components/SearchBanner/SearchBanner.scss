@@ -1,0 +1,56 @@
+@import "../../assets/styles/global.scss";
+
+.search-banner-wrapper {
+    border-radius: 50%;
+    background: #fff;
+    width: 500px;
+    height: 500px;
+    position: relative;
+
+    @include for-size(tablet-portrait) {
+        width: 400px;
+        height: 400px;
+    }
+
+    @include for-size(xs-device) {
+        width: 280px;
+        height: 280px;
+    }
+
+    svg {
+        font-size: 350px;
+        position: absolute;
+        top: 15%;
+        left: 15%;
+
+        @include for-size(tablet-portrait) {
+            font-size: 260px;
+        }
+
+        @include for-size(xs-device) {
+            font-size: 185px;
+        }
+
+        polygon:first-of-type {
+            fill: #2faeb7;
+        }
+
+        g {
+            fill: #fff;
+        }
+    }
+
+    .search-icon {
+        svg {
+            position: absolute;
+            font-size: 100px;
+            right: 20%;
+            left: auto;
+            top: 50%;
+            fill: #fff;
+            @include for-size(xs-device) {
+                font-size: 60px;
+            }
+        }
+    }
+}
